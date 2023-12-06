@@ -1,51 +1,70 @@
-.pageContainer {
-  display: flex;
+.heroContainer {
+  position: relative;
+  padding-bottom: 0px;
+  margin: 0;
 
-  .imageContainer {
-    height: calc(100vh - 4rem);
-    width: 70%;
-    // border: 3px solid blue;
-    // transform: scale(1.3);
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background: url("/product4.png");
+    /* filter: brightness(0.9); */
+
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  .textContainer {
-    display: flex;
-    background-color: rgb(244, 244, 242);
-    height: calc(100vh - 4rem);
-    width: 30%;
-    // border: 3px solid green;
-    padding: 0 2rem;
+  .heroTitle {
+    width: 50%;
+    position: absolute;
+    top: 31%;
+    left: 36%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 700;
 
-    .child {
-      align-self: flex-end;
-      padding-bottom: 4rem;
-
-      h1 {
-        font-weight: 300;
-        font-size: 50px;
-      }
-
-      p {
-        font-weight: 300;
-        font-size: 15px;
-      }
-
-      .button {
-        display: flex;
-        justify-content: center; /* Align horizontal */
-        align-items: center; /* Align vertical */
-        height: 2.5rem;
-        border-radius: 15px;
-        background: rgb(13, 48, 104);
-        margin: auto;
-        color: white;
-        text-transform: uppercase;
-        cursor: pointer;
-      }
-
-      .button:hover {
-        background: rgb(25, 86, 186);
-      }
+    img {
+      height: 80px;
     }
+  }
+
+  .child {
+    width: 30%;
+    position: absolute;
+    top: 51%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    // font-size: 4rem;
+    // font-weight: 700;
+  }
+
+  .button {
+    width: 30%;
+    position: absolute;
+    top: 61%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    // font-size: 4rem;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center; /* Align horizontal */
+    align-items: center; /* Align vertical */
+    height: 2.5rem;
+    border-radius: 15px;
+    // background: rgb(13, 48, 104);
+    background: rgb(193, 43, 34);
+    margin: auto;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background: rgb(219, 136, 128);
   }
 }
